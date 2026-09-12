@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gizlilik Politikası · Huzur: Zikirmatik ve Dualar</title>
+<style>
+  :root {
+    --ground: #FBFAF8;
+    --surface: #FFFFFF;
+    --ink: #14261F;
+    --ink-2: #3E5349;
+    --muted: #74857C;
+    --line: #E1E3DC;
+    --accent: #2D6A4F;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ground: #0C1411;
+      --surface: #141F1A;
+      --ink: #E9EFEB;
+      --ink-2: #B5C4BB;
+      --muted: #8A9A92;
+      --line: #24362F;
+      --accent: #79C79C;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--ground);
+    color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 40px 20px 80px; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 24px; margin-bottom: 32px; }
+  h1 { font-size: 27px; line-height: 1.25; margin: 0 0 8px; letter-spacing: -.02em; }
+  .sub { color: var(--muted); font-size: 14px; margin: 0; }
+  h2 {
+    font-size: 20px; margin: 38px 0 12px; letter-spacing: -.01em;
+    padding-top: 22px; border-top: 1px solid var(--line);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  h3 { font-size: 16px; margin: 24px 0 8px; }
+  p, li { color: var(--ink-2); }
+  ul { padding-left: 20px; }
+  li { margin-bottom: 7px; }
+  a { color: var(--accent); }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 14.5px; }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+  td { color: var(--ink-2); }
+  .tablewrap { overflow-x: auto; }
+  .note {
+    background: var(--surface); border: 1px solid var(--line);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px 10px 10px 3px; padding: 16px 18px; margin: 20px 0;
+  }
+  .note p { margin: 0; }
+  .langbar { display: flex; gap: 8px; margin-bottom: 28px; }
+  .langbar a {
+    font-size: 13px; font-weight: 600; text-decoration: none;
+    border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px;
+    color: var(--ink-2);
+  }
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+    color: var(--muted); font-size: 13px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="langbar">
+  <a href="#tr">Türkçe</a>
+  <a href="#en">English</a>
+</div>
+
+<header id="tr">
+  <h1>Gizlilik Politikası</h1>
+  <p class="sub">Huzur: Zikirmatik ve Dualar &middot; com.pelincicin.huzurzikirmatikvedualar</p>
+  <p class="sub">Son güncelleme: 12 Eylül 2026</p>
+</header>
+
+<p>Bu politika, <strong>Huzur: Zikirmatik ve Dualar</strong> uygulamasının hangi verileri topladığını, bunları neden işlediğini ve kimlerle paylaştığını açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz.</p>
+
+<h2>Kısaca</h2>
+<ul>
+  <li>Hesap açmanız gerekmez. Ad, e-posta, telefon numarası istemiyoruz.</li>
+  <li>Zikir sayılarınız ve ayarlarınız öncelikle <strong>cihazınızda</strong> saklanır.</li>
+  <li>Yalnızca <strong>Zikir Zinciri</strong> özelliğini kullanırsanız verileriniz sunucuya gider, çünkü bu özellik arkadaşlarınızla ortak bir hedefi paylaşmayı gerektirir.</li>
+  <li>Konumunuz kıble yönü ve namaz vakitleri için kullanılır, bizim sunucularımıza kaydedilmez.</li>
+  <li>Uygulama reklam gösterir.</li>
+</ul>
+
+<h2>Toplanan veriler</h2>
+
+<h3>Cihazınızda kalan veriler</h3>
+<p>Aşağıdakiler yalnızca telefonunuzda saklanır ve bize gönderilmez. Uygulamayı silerseniz bunlar da silinir.</p>
+<ul>
+  <li>Günlük ve toplam zikir sayılarınız, geçmiş kayıtlar</li>
+  <li>Günlük zikir hedefiniz</li>
+  <li>Favori dualarınız ve dua sayaçlarınız</li>
+  <li>Tema tercihiniz (açık/koyu), titreşim ve ses ayarları</li>
+  <li>Günlük iyilik işaretlemeleriniz</li>
+</ul>
+
+<h3>Zikir Zinciri kullanırsanız sunucuya gönderilen veriler</h3>
+<p>Bu özellik arkadaşlarınızla ortak zikir hedefi kurmanızı sağlar ve bu nedenle verilerin paylaşılması gerekir. Veriler Google Firebase (Cloud Firestore) üzerinde saklanır.</p>
+
+<div class="tablewrap">
+<table>
+  <thead>
+    <tr><th>Veri</th><th>Neden</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Girdiğiniz görünen ad</td><td>Grup üyelerinin birbirini tanıması</td></tr>
+    <tr><td>Anonim kullanıcı kimliği</td><td>Yalnızca kendi verinize erişebilmeniz</td></tr>
+    <tr><td>Bildirim jetonu (push token)</td><td>Grup ve davet bildirimleri gönderebilmek</td></tr>
+    <tr><td>Zikir ilerlemesi (kaç zikir çektiğiniz)</td><td>Grup hedefinin ortak takibi</td></tr>
+    <tr><td>Grup üyelikleri ve davet kodları</td><td>Özelliğin çalışması</td></tr>
+    <tr><td>Arkadaş listeniz (ad ve bildirim jetonu)</td><td>Kod girmeden talep gönderebilmek</td></tr>
+    <tr><td>Son görülme zamanı</td><td>Arkadaş listesinde etkinlik göstergesi</td></tr>
+  </tbody>
+</table>
+</div>
+
+<div class="note">
+  <p><strong>Anonim kimlik doğrulama:</strong> Uygulama Firebase Anonymous Authentication kullanır. Bu, cihazınıza rastgele bir kimlik atanması demektir. Adınız, e-postanız veya telefon numaranız bu kimliğe bağlı değildir ve bizde böyle bir bilgi yoktur.</p>
+</div>
+
+<h3>Konum</h3>
+<p>Kıble pusulası ve namaz vakitleri için cihazınızın konumunu isteriz. Koordinatlarınız:</p>
+<ul>
+  <li>Kıble açısı ve namaz vakitleri hesabı için <strong>cihazınızda</strong> kullanılır,</li>
+  <li>bulunduğunuz şehrin adını gösterebilmek için Google'ın ters coğrafi kodlama servisine gönderilir,</li>
+  <li>bizim sunucularımıza <strong>kaydedilmez</strong> ve üçüncü kişilerle paylaşılmaz.</li>
+</ul>
+<p>Konum iznini vermezseniz uygulamanın geri kalanı çalışmaya devam eder, yalnızca kıble ve namaz vakitleri kullanılamaz.</p>
+
+<h3>Reklamlar</h3>
+<p>Uygulama Google AdMob aracılığıyla reklam gösterir. AdMob, reklam kimliğiniz (Advertising ID) dâhil olmak üzere bazı cihaz bilgilerini işleyebilir.</p>
+<ul>
+  <li>Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'deki kullanıcılara, uygulamayı ilk açtıklarında Google'ın izin formu gösterilir. Tercihinizi uygulama içindeki <strong>Reklam Tercihleri</strong> bağlantısından istediğiniz zaman değiştirebilirsiniz.</li>
+  <li>Kişiselleştirilmiş reklamlara izin vermezseniz reklamlar yine gösterilir, ancak ilgi alanlarınıza göre seçilmez.</li>
+  <li>Reklam kimliğinizi cihazınızın ayarlarından sıfırlayabilir veya silebilirsiniz.</li>
+</ul>
+<p>Google'ın reklam verilerini nasıl işlediğini <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google'ın iş ortağı sitelerine ilişkin politikasında</a> okuyabilirsiniz.</p>
+
+<h3>Bildirimler</h3>
+<p>Hatırlatıcılar ve Zikir Zinciri bildirimleri için bildirim izni isteriz. Bildirimlerin gönderilebilmesi amacıyla cihazınıza ait bir bildirim jetonu Expo'nun bildirim servisi üzerinden iletilir. Bildirim iznini vermezseniz uygulamanın geri kalanı normal çalışır.</p>
+
+<h2>Verilerinizi kimlerle paylaşıyoruz</h2>
+<p>Verilerinizi satmıyoruz. Yalnızca uygulamanın çalışması için gereken hizmet sağlayıcılarla paylaşılır:</p>
+<ul>
+  <li><strong>Google Firebase</strong> (Cloud Firestore, Authentication) &mdash; Zikir Zinciri verilerinin saklanması</li>
+  <li><strong>Google AdMob</strong> &mdash; reklam gösterimi</li>
+  <li><strong>Google</strong> &mdash; konumdan şehir adı çözümleme</li>
+  <li><strong>Expo</strong> &mdash; bildirim gönderimi</li>
+</ul>
+
+<h2>Saklama süresi ve verilerinizin silinmesi</h2>
+<ul>
+  <li>Cihazınızdaki veriler uygulamayı kaldırdığınızda silinir.</li>
+  <li>Zikir Zinciri verileri, siz silene kadar saklanır. Kurduğunuz bir grubu uygulama içinden silebilir, katıldığınız bir gruptan çıkabilir, gönderdiğiniz talepleri iptal edebilirsiniz.</li>
+  <li>Sunucudaki tüm verilerinizin silinmesini isterseniz aşağıdaki adrese yazın. Talebinizi makul bir süre içinde yerine getiririz.</li>
+</ul>
+
+<h2>Çocuklar</h2>
+<p>Uygulama çocuklara yönelik değildir ve bilerek 13 yaşın altındaki kişilerden veri toplamaz. Böyle bir veri topladığımızı fark edersek sileriz.</p>
+
+<h2>Haklarınız</h2>
+<p>Bulunduğunuz ülkenin mevzuatına göre (Türkiye'de 6698 sayılı KVKK, Avrupa'da GDPR) verilerinize erişme, düzeltilmesini veya silinmesini isteme ve işlemeye itiraz etme haklarına sahipsiniz. Bu haklarınızı kullanmak için aşağıdaki adrese yazabilirsiniz.</p>
+
+<h2>Değişiklikler</h2>
+<p>Bu politika güncellenebilir. Önemli bir değişiklik olduğunda sayfanın üstündeki tarihi güncelleriz.</p>
+
+<h2>İletişim</h2>
+<p>Sorularınız ve veri talepleriniz için: <a href="mailto:puffeesoftware@gmail.com">puffeesoftware@gmail.com</a></p>
+<p>Uygulama geliştiricisi: Pelin Çiçin</p>
+
+<hr style="border:0;border-top:1px solid var(--line);margin:56px 0 40px">
+
+<header id="en">
+  <h1>Privacy Policy</h1>
+  <p class="sub">Huzur: Zikirmatik ve Dualar &middot; com.pelincicin.huzurzikirmatikvedualar</p>
+  <p class="sub">Last updated: 12 September 2026</p>
+</header>
+
+<p>This policy explains what data the <strong>Huzur: Zikirmatik ve Dualar</strong> app collects, why it is processed, and who it is shared with.</p>
+
+<h2>In short</h2>
+<ul>
+  <li>No account is required. We do not ask for your name, email address or phone number.</li>
+  <li>Your counts and settings are stored <strong>on your device</strong>.</li>
+  <li>Data is sent to a server only if you use the <strong>Zikir Zinciri</strong> (shared dhikr) feature, because that feature shares a goal with your friends.</li>
+  <li>Your location is used for the qibla direction and prayer times. It is not stored on our servers.</li>
+  <li>The app shows ads.</li>
+</ul>
+
+<h2>Data stored on your device only</h2>
+<p>The following never leaves your phone and is deleted when you uninstall the app: daily and total dhikr counts, history, your daily goal, favourite prayers and their counters, theme preference, vibration and sound settings, and daily good-deed markers.</p>
+
+<h2>Data sent to the server if you use Zikir Zinciri</h2>
+<p>Stored on Google Firebase (Cloud Firestore): the display name you enter, an anonymous user identifier, a push notification token, your dhikr progress, your group memberships and invite codes, your friend list (name and notification token), and a last-seen timestamp.</p>
+<p>The app uses Firebase Anonymous Authentication. Your device is assigned a random identifier. No name, email address or phone number is linked to it.</p>
+
+<h2>Location</h2>
+<p>Location is requested for the qibla compass and prayer times. Your coordinates are used on your device for those calculations and are sent to Google's reverse geocoding service to display your city name. They are not stored on our servers and are not shared with third parties. If you decline the permission, the rest of the app continues to work.</p>
+
+<h2>Advertising</h2>
+<p>Ads are served through Google AdMob, which may process device information including your Advertising ID. Users in the European Economic Area, the United Kingdom and Switzerland are shown Google's consent form on first launch, and can change their choice at any time through the <strong>Reklam Tercihleri</strong> (Ad preferences) link in the app. If you decline personalised ads, ads are still shown but are not selected based on your interests. You can reset or delete your Advertising ID in your device settings. See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">Google's policy on partner sites</a>.</p>
+
+<h2>Notifications</h2>
+<p>Notification permission is requested for reminders and Zikir Zinciri alerts. A device notification token is sent through Expo's notification service so that notifications can be delivered. Declining the permission does not affect the rest of the app.</p>
+
+<h2>Who we share data with</h2>
+<p>We do not sell your data. It is shared only with the service providers needed to run the app: Google Firebase (Cloud Firestore, Authentication), Google AdMob, Google (reverse geocoding) and Expo (notifications).</p>
+
+<h2>Retention and deletion</h2>
+<p>Data on your device is deleted when you uninstall the app. Zikir Zinciri data is kept until you delete it. You can delete a group you created, leave a group you joined, and cancel requests you sent, all from within the app. To request deletion of all your server-side data, write to the address below.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children and does not knowingly collect data from anyone under 13. If we become aware that we have, we will delete it.</p>
+
+<h2>Your rights</h2>
+<p>Depending on where you live (GDPR in Europe, KVKK Law No. 6698 in Türkiye), you have the right to access your data, to request its correction or deletion, and to object to its processing. Write to the address below to exercise these rights.</p>
+
+<h2>Changes</h2>
+<p>This policy may be updated. When a significant change is made, the date at the top of the page is updated.</p>
+
+<h2>Contact</h2>
+<p>For questions and data requests: <a href="mailto:puffeesoftware@gmail.com">puffeesoftware@gmail.com</a></p>
+<p>Developer: Pelin Çiçin</p>
+
+<footer>
+  Huzur: Zikirmatik ve Dualar &middot; com.pelincicin.huzurzikirmatikvedualar
+</footer>
+
+</div>
+</body>
+</html>
